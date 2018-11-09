@@ -2,8 +2,9 @@
   "name": "weather-forecast",
   "version": "0.1.0",
   "description": "Weather forecast SPA",
-  "author": "Anderson Mamede",
+  "author": "Anderson Mamede <mamede.anderson@gmail.com>",
   "homepage": "https://blog.andersonmamede.com.br/challenges-accepted/challenges/weather-forecast/app/build/",
+  "license": "ISC",
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
