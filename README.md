@@ -4,10 +4,10 @@
 
 > Inspired by https://github.com/LFeh/frontend-challenges
 
-# Challenges
+## Challenges
 
 Just me practicing using real jobs challenges.
 
-| | Short description | Stack | Company | Details / My response |
-|--|--|--|--|--
-01 | Weather forecast SPA | React | [1STi](http://www.1sti.com.br/)  | [more →](challenges/weather-forecast/)
+| | Challenge | Stack | Details | My response |
+|--|--|--|--
+01 | Weather forecast SPA | React | [More →](challenges/weather-forecast/) | [App →](challenges/weather-forecast/app/)
