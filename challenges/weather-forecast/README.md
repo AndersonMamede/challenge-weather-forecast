@@ -10,11 +10,15 @@
 Let's take a look at the weather forecast? The goal is to create a SPA (Single Page Application) to consume [Yahoo's weather forecast API](https://developer.yahoo.com/weather/). Layout should be responsive and as close as possible to the images below:
 
 Web:
+
 ![Layout web 01](layout-web-01.png)
+
 ![Layout web 02](layout-web-02.png)
 
 Mobile:
+
 ![Layout mobile 01](layout-mobile-01.png)
+
 ![Layout mobile 02](layout-mobile-02.png)
 
 ## Tips
