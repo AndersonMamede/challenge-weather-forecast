@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.025ffce4.chunk.css",
-  "main.js": "/static/js/main.2470f793.chunk.js",
-  "main.js.map": "/static/js/main.2470f793.chunk.js.map",
-  "static/js/1.0cdd6f18.chunk.js": "/static/js/1.0cdd6f18.chunk.js",
-  "static/js/1.0cdd6f18.chunk.js.map": "/static/js/1.0cdd6f18.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.025ffce4.chunk.css.map": "/static/css/main.025ffce4.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.22804049a620226a6311d326065ae993.js": "/precache-manifest.22804049a620226a6311d326065ae993.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.025ffce4.chunk.css",
+  "main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.2470f793.chunk.js",
+  "main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.2470f793.chunk.js.map",
+  "static/js/1.0cdd6f18.chunk.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0cdd6f18.chunk.js",
+  "static/js/1.0cdd6f18.chunk.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0cdd6f18.chunk.js.map",
+  "runtime~main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js",
+  "runtime~main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js.map",
+  "static/css/main.025ffce4.chunk.css.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.025ffce4.chunk.css.map",
+  "index.html": "/challenges-accepted/challenges/weather-forecast/app/build/index.html",
+  "precache-manifest.817964c9089c82f963049b5d383f1c7c.js": "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.817964c9089c82f963049b5d383f1c7c.js",
+  "service-worker.js": "/challenges-accepted/challenges/weather-forecast/app/build/service-worker.js"
 }
