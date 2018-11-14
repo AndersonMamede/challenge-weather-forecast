@@ -25,8 +25,7 @@ class App extends Component {
     }
 
     loadCapitalsForecast() {
-        // capitals1 ?
-        const capitalsWhereClause = `where text="${this.props.capitals1.join('" or text="')}"`;
+        const capitalsWhereClause = `where text="${this.props.capitals.join('" or text="')}"`;
         const woeidFilter = `select woeid from geo.places(1) ${capitalsWhereClause}`;
         const query = `select * from weather.forecast where woeid in (${woeidFilter}) and u='c'`;
 
