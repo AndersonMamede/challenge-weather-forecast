@@ -7,4 +7,9 @@
 body{
     padding: 20px;
     font: normal 14px Arial, Helvetica, sans-serif;
+    background: #FF7F00;
+    background: -moz-linear-gradient(top, #FF7F00, #ffba00);
+    background: -webkit-linear-gradient(top, #FF7F00, #ffba00);
+    background: linear-gradient(to bottom, #FF7F00, #ffba00);
+    background-repeat: no-repeat;
 }

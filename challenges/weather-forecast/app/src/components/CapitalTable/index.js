@@ -1,5 +1,6 @@
 import React from 'react';
 import CapitalRow from './../CapitalRow/';
+import './index.css';
 
 class CapitalTable extends React.Component {
     render() {

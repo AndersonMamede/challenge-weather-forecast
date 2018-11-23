@@ -1,0 +1,9 @@
+.app{
+    width: 100%;
+    max-width: 420px;
+}
+
+.header__title{
+    font-size: 30px;
+    color: #FFF;
+}

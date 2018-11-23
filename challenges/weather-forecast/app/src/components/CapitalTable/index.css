@@ -1,0 +1,8 @@
+.capitals__column-wrapper{
+    display: inline-block;
+    width: 50%;
+}
+
+.capitals__table{
+    width: 100%;
+}
