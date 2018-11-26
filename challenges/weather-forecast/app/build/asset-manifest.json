@@ -1,13 +1,14 @@
 {
-  "main.css": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.025ffce4.chunk.css",
-  "main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.9c1a179e.chunk.js",
-  "main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.9c1a179e.chunk.js.map",
-  "static/js/1.0cdd6f18.chunk.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0cdd6f18.chunk.js",
-  "static/js/1.0cdd6f18.chunk.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0cdd6f18.chunk.js.map",
+  "main.css": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.0851d2d2.chunk.css",
+  "main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.c6dc22dc.chunk.js",
+  "main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.c6dc22dc.chunk.js.map",
+  "static/js/1.0b13b488.chunk.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0b13b488.chunk.js",
+  "static/js/1.0b13b488.chunk.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0b13b488.chunk.js.map",
   "runtime~main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js",
   "runtime~main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js.map",
-  "static/css/main.025ffce4.chunk.css.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.025ffce4.chunk.css.map",
+  "static/media/search-icon.svg": "/challenges-accepted/challenges/weather-forecast/app/build/static/media/search-icon.87a42f03.svg",
+  "static/css/main.0851d2d2.chunk.css.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.0851d2d2.chunk.css.map",
   "index.html": "/challenges-accepted/challenges/weather-forecast/app/build/index.html",
-  "precache-manifest.111d5a4d48f9f21d7330cb82940c9d41.js": "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.111d5a4d48f9f21d7330cb82940c9d41.js",
+  "precache-manifest.53a5c2634af415a9db6d8fa07c73d825.js": "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.53a5c2634af415a9db6d8fa07c73d825.js",
   "service-worker.js": "/challenges-accepted/challenges/weather-forecast/app/build/service-worker.js"
 }
