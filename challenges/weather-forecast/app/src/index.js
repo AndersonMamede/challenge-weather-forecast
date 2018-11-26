@@ -4,8 +4,8 @@ import App from './App';
 import './index.css';
 
 const CAPITALS = [
-    'Rio de Janeiro', 'São Paulo', 'Belo Horizonte', 'Brasília',
-    'Belem', 'Salvador', 'Curitiba', 'Fortaleza', 'Manaus', 'João Pessoa'
+    'Brasília', 'Amsterdam', 'London', 'Dublin', 'Berlin',
+    'London', 'Lisbon', 'Paris', 'Brussels', 'Madrid'
 ];
 
 const weatherApiUrl = 'https://query.yahooapis.com/v1/public/yql';

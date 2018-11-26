@@ -1,8 +1,50 @@
+.capitals{
+    padding-top: 20px;
+    border-top: 1px solid #FFF;
+}
+
+.capitals__title{
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.capitals__content{
+    max-width: 330px;
+    margin: 0 auto;
+}
+
 .capitals__column-wrapper{
     display: inline-block;
     width: 50%;
+    vertical-align: top;
 }
 
 .capitals__table{
     width: 100%;
+}
+
+.capitals__table th,
+.capitals__table td{
+    padding: 4px 0;
+}
+
+.capitals__table th{
+    text-align: left;
+    font-weight: 300;
+}
+
+.capitals__table td{
+    font-weight: 700;
+}
+
+.capitals__colMin,
+.capitals__colMax{
+    width: 30px;
+}
+
+.capitals__table--Side--Right td,
+.capitals__table--Side--Right th{
+    text-align: right;
 }

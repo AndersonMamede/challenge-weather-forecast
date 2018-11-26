@@ -11,11 +11,14 @@ class CapitalRow extends React.Component {
     }
 
     render() {
+        const colName = <td className="capitals__colName">{this.props.capital.name}</td>;
+
         return (
             <tr onClick={this.handleClick}>
-                <td>{this.props.capital.min}º</td>
-                <td>{this.props.capital.max}º</td>
-                <td>{this.props.capital.name}</td>
+                {this.props.side === "right" ? colName : null}
+                <td className="capitals__colMin">{this.props.capital.min}º</td>
+                <td className="capitals__colMax">{this.props.capital.max}º</td>
+                {this.props.side === "right" ? null : colName}
             </tr>
         );
     }

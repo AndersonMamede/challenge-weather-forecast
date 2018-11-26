@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 class SearchBar extends React.Component {
     constructor(props) {
@@ -33,11 +34,12 @@ class SearchBar extends React.Component {
         return (
             <section className="search-bar">
                 <form onSubmit={this.handleSubmit}>
-                    <input className="search-bar__input" type="search" required
-                        placeholder="Search a city..."
+                    <input className="search-bar__input" type="text" placeholder="Search a city" required
                         defaultValue={this.props.searchedCity}
                         ref={this.input}/>
-                    <button type="submit">Search</button>
+                    <button className="search-bar__submit" type="submit" title="Search">
+                        <img src={require('./search-icon.svg')} width="22" height="22" alt="Search"/>
+                    </button>
                 </form>
             </section>
         );

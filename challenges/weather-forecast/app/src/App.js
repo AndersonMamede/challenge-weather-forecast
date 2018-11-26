@@ -9,7 +9,7 @@ class App extends Component {
         super(props);
 
         this.state = {
-            searchedCity: 'Limeira',
+            searchedCity: '',
             capitals: []
         };
 
@@ -39,13 +39,11 @@ class App extends Component {
                 const capitals = [];
 
                 data.query.results.channel.forEach((capital, key) => {
-                    const { location } = capital;
-                    const { forecast } = capital.item;
                     capitals.push({
                         key,
-                        name: `${location.city}, ${location.region} - ${location.country}`,
-                        min: forecast[0].low,
-                        max: forecast[0].high
+                        name: capital.location.city,
+                        min: capital.item.forecast[0].low,
+                        max: capital.item.forecast[0].high
                     });
                 });
 
