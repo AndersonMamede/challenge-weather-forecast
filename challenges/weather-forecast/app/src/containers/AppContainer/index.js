@@ -7,7 +7,7 @@ import ErrorMessage from './../../components/ErrorMessage';
 import Header from './../../components/Header';
 import WeatherCard from './../../components/WeatherCard';
 import Search from './../../components/Search';
-import CapitalsSection from './../../components/CapitalsSection';
+import Footer from './../../components/Footer';
 
 class AppContainer extends React.Component {
     constructor(props) {
@@ -69,9 +69,9 @@ class AppContainer extends React.Component {
                         }
                         {this.state.weatherCardError && <ErrorMessage message={this.state.weatherCardError}/>}
                         <Search onSubmit={this.showWeatherCard}/>
-                        {this.state.capitalsForecasts && <CapitalsSection forecasts={this.state.capitalsForecasts}/>}
-                        {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
                     </main>
+                    {this.state.capitalsForecasts && <Footer forecasts={this.state.capitalsForecasts}/>}
+                    {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
                 </div>
             </div>
         );

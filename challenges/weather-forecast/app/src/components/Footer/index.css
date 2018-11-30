@@ -1,9 +1,9 @@
-.capitals{
-    padding: 20px 25px 0 25px;
+.footer{
+    padding: 20px 45px 0 45px;
     border-top: 1px solid #FFF;
 }
 
-.capitals__title{
+.footer__title{
     margin-bottom: 10px;
     font-size: 26px;
     font-weight: 700;
