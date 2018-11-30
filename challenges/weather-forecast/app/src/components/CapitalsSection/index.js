@@ -25,7 +25,7 @@ const CapitalsSection = ({ forecasts }) => {
                         <CapitalTable
                             key={key}
                             forecasts={forecastsChunk}
-                            aside={(key % 2) === 1 ? 'right' : 'left'}/>
+                            side={(key % 2) === 1 ? 'right' : 'left'}/>
                     )}
                 </div>
             </div>
