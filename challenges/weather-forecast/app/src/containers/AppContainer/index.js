@@ -61,17 +61,19 @@ class AppContainer extends React.Component {
             <div className="app">
                 <div className="app__wrapper">
                     <Header/>
-                    <main>
+                    <main className="app__main">
+                        {this.state.weatherCardError && <ErrorMessage message={this.state.weatherCardError}/>}
                         {this.state.weatherCardForecast &&
                             <WeatherCard
                                 forecast={this.state.weatherCardForecast}
                                 onClickClose={this.closeWeatherCard}/>
                         }
-                        {this.state.weatherCardError && <ErrorMessage message={this.state.weatherCardError}/>}
                         <Search onSubmit={this.showWeatherCard}/>
                     </main>
-                    {this.state.capitalsForecasts && <Footer forecasts={this.state.capitalsForecasts}/>}
                     {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
+                    {this.state.capitalsForecasts &&
+                        <Footer forecasts={this.state.capitalsForecasts}/>
+                    }
                 </div>
             </div>
         );

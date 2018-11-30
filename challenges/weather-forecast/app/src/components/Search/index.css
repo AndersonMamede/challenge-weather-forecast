@@ -1,8 +1,5 @@
-.search-bar{
+.search-bar__form{
     position: relative;
-    margin: 0 auto 27px auto;
-    max-width: 360px;
-    text-align: center;
 }
 
 .search-bar__input{

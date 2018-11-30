@@ -6,9 +6,14 @@ import './index.css';
 const Search = ({ onSubmit }) => {
     let searchedTerm = 'Amsterdam';
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        onSubmit(searchedTerm);
+    }
+
     return (
         <section className="search-bar">
-            <form onSubmit={(event) => { event.preventDefault(); onSubmit(searchedTerm); }}>
+            <form className="search-bar__form" onSubmit={handleSubmit}>
                 <input
                     className="search-bar__input"
                     type="search"

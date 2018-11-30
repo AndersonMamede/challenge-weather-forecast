@@ -10,8 +10,11 @@
 }
 
 .app__wrapper{
-    padding: 20px;
-    width: 100%;
-    max-width: 420px;
+    max-width: 390px;
+    padding: 20px 0;
     margin: 0 auto;
+}
+
+.app__main{
+    padding: 20px 30px 30px 30px;
 }
