@@ -1,27 +1,22 @@
 import React from 'react';
+import { forecastDataType, sideType } from './../../types';
 
-class CapitalRow extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
+const CapitalRow = ({ side, forecast }) => (
+    <tr>
+        {side === 'right' && <td>{forecast.city}</td>}
+        <td>{forecast.forecastList[0].low}º</td>
+        <td>{forecast.forecastList[0].high}º</td>
+        {side === 'left' && <td>{forecast.city}</td>}
+    </tr>
+);
 
-    handleClick() {
-        console.info(this.props);
-    }
+CapitalRow.propTypes = {
+    forecast: forecastDataType.isRequired,
+    side: sideType.isRequired,
+};
 
-    render() {
-        const colName = <td className="capitals__colName">{this.props.capital.name}</td>;
-
-        return (
-            <tr onClick={this.handleClick}>
-                {this.props.side === "right" ? colName : null}
-                <td className="capitals__colMin">{this.props.capital.min}º</td>
-                <td className="capitals__colMax">{this.props.capital.max}º</td>
-                {this.props.side === "right" ? null : colName}
-            </tr>
-        );
-    }
-}
+CapitalRow.defaultProps = {
+    side: 'left'
+};
 
 export default CapitalRow;

@@ -1,0 +1,16 @@
+.capitals{
+    padding-top: 20px;
+    border-top: 1px solid #FFF;
+}
+
+.capitals__title{
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.capitals__content{
+    max-width: 330px;
+    margin: 0 auto;
+}

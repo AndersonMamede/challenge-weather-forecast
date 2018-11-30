@@ -1,45 +1,37 @@
 import React from 'react';
-import CapitalRow from './../CapitalRow/';
+import PropTypes from 'prop-types';
+import { forecastDataType, sideType } from './../../types';
+
 import './index.css';
+import CapitalRow from './../CapitalRow';
 
-class CapitalTable extends React.Component {
-    render() {
-        const capitalsChunks = [
-            this.props.capitals.slice(0, this.props.capitals.length/2),
-            this.props.capitals.slice(this.props.capitals.length/2)
-        ];
-        
-        return (
-            <section className="capitals">
-                <div className="capitals__content">
-                    <h3 className="capitals__title">Capitals</h3>
-                    {capitalsChunks.map((capitals, tableNumber) => {
-                        const side = tableNumber%2 === 1 ? "right" : "left";
-                        const tableSideClass = "capitals__table--Side--" + (side === "right" ? "Right" : "Left");
-                        const thName = <th></th>;
+const CapitalTable = ({ side, forecasts }) => (
+    <div className="capitals__column-wrapper">
+        <table className="capitals__table" data-side={side} border="0">
+            <thead>
+                <tr>
+                    {side === 'right' && <th></th>}
+                    <th>Min</th>
+                    <th>Max</th>
+                    {side === 'left' && <th></th>}
+                </tr>
+            </thead>
+            <tbody>
+                {forecasts.map((forecast, key) =>
+                    <CapitalRow key={key} forecast={forecast} side={side}/>
+                )}
+            </tbody>
+        </table>
+    </div>
+);
 
-                        return <div key={tableNumber} className="capitals__column-wrapper">
-                            <table className={"capitals__table " + tableSideClass} data-side={side} border="0">
-                                <thead>
-                                    <tr>
-                                        {side === "right" ? thName : null}
-                                        <th>Min</th>
-                                        <th>Max</th>
-                                        {side === "right" ? null : thName}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {capitals.map(capital => 
-                                        <CapitalRow key={capital.name} capital={capital} side={side} />
-                                    )}
-                                </tbody>
-                            </table>
-                        </div>
-                    })}
-                </div>
-            </section>
-        );
-    }
-}
+CapitalTable.propTypes = {
+    forecasts: PropTypes.arrayOf(forecastDataType).isRequired,
+    side: sideType.isRequired,
+};
+
+CapitalTable.defaultProps = {
+    side: 'left'
+};
 
 export default CapitalTable;

@@ -1,0 +1,17 @@
+.app{
+    min-height: 100vh;
+    background: #a7a7a7;
+    /*
+    background: #FF7F00;
+    background: -moz-linear-gradient(#FF7F00, #ffba00);
+    background: -webkit-linear-gradient(#FF7F00, #ffba00);
+    background: linear-gradient(#FF7F00, #ffba00);
+    */
+}
+
+.app__wrapper{
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}

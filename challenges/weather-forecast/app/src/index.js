@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
 import './index.css';
+import AppContainer from './containers/AppContainer';
 
 const CAPITALS = [
     'Brasília', 'Amsterdam', 'London', 'Dublin', 'Berlin',
     'London', 'Lisbon', 'Paris', 'Brussels', 'Madrid'
 ];
 
-const weatherApiUrl = 'https://query.yahooapis.com/v1/public/yql';
-
 ReactDOM.render(
-    <App
-        capitals={CAPITALS}
-        weatherApiUrl={weatherApiUrl}/>,
+    <AppContainer capitals={CAPITALS}/>,
     document.getElementById('root')
 );

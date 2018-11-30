@@ -6,12 +6,11 @@
 }
 
 .search-bar__input{
-    padding: 10px 15px;
+    padding: 8px 55px 8px 15px;
     width: 100%;
     font: inherit;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
-    outline: none;
 }
 
 .search-bar__input::-webkit-input-placeholder{ font-weight: 300; color: #919191; }
@@ -22,13 +21,14 @@
 
 .search-bar__submit{
     position: absolute;
-    top: 4px;
-    right: 4px;
-    padding: 6px 8px 3px 8px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 13px;
     border: none;
-    background: none;
+    background: #E0E0E0;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .search-bar__submit:hover,
