@@ -13,7 +13,7 @@ const CapitalsSection = ({ forecasts }) => {
         <section className="capitals">
             <div className="capitals__content">
                 <h3 className="capitals__title">Capitals</h3>
-                <div className="capitals__content">
+                <div>
                     <CapitalTable forecasts={firstChunk} side="left"/>
                     <CapitalTable forecasts={secondChunk} side="right"/>
                 </div>

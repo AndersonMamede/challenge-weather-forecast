@@ -1,5 +1,5 @@
 .capitals{
-    padding-top: 20px;
+    padding: 20px 25px 0 25px;
     border-top: 1px solid #FFF;
 }
 
@@ -8,9 +8,4 @@
     font-size: 26px;
     font-weight: 700;
     color: #FFF;
-}
-
-.capitals__content{
-    max-width: 330px;
-    margin: 0 auto;
 }
