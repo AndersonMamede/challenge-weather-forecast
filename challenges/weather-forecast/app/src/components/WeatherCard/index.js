@@ -5,6 +5,9 @@ import expandDayAbbr from './../../services/expandDayAbbr';
 
 import './index.css';
 
+const iconLow = require('./icon-low.svg');
+const iconHigh = require('./icon-high.svg');
+
 const WeatherCard = ({ forecast, onClickClose }) => {
     const today = forecast.forecastList[0];
     const nextDays = forecast.forecastList.slice(1, 6);
@@ -12,19 +15,22 @@ const WeatherCard = ({ forecast, onClickClose }) => {
     return (
         <section className="weather-card">
             <div className="weather-card__close" onClick={onClickClose}>x</div>
-            <div className="weather-card__detail">{forecast.city}, {forecast.region} - {forecast.country}</div>
-            <h2>{forecast.currentTemperature}º {forecast.currentConditionText}</h2>
-            <div>
-                <table>
+            <div className="weather-card__body">
+                <div className="weather-card__city">{forecast.city}, {forecast.region} - {forecast.country}</div>
+                <h2 className="weather-card__temperature">
+                    {forecast.currentTemperature}ºC {forecast.currentConditionText}
+                </h2>
+                <table className="weather-card__now">
                     <tbody>
                         <tr>
-                            <td>
-                                <img src={require('./icon-low.svg')} width="12" height="12" alt="Low" title="Low"/>
-                                <span>{today.low}º</span>
-                                <img src={require('./icon-high.svg')} width="12" height="12" alt="High" title="High"/>
-                                <span>{today.high}º</span>
+                            <td className="weather-card__now__first-column">
+                                <img src={iconLow} width="12" height="12" alt="Low"/><b>{today.low}º</b>
+                                &nbsp;&nbsp;&nbsp;
+                                <img src={iconHigh} width="12" height="12" alt="High"/><b>{today.high}º</b>
                             </td>
-                            <td>Wind chill <b>{forecast.windChill}º</b></td>
+                            <td className="weather-card__now__second-column">
+                                Wind chill <b>{forecast.windChill}ºC</b>
+                            </td>
                         </tr>
                         <tr>
                             <td>Wind <b>{forecast.windSpeed}km/h</b></td>
@@ -33,20 +39,18 @@ const WeatherCard = ({ forecast, onClickClose }) => {
                     </tbody>
                 </table>
             </div>
-            <div>
-                <table>
-                    <tbody>
-                        <tr>
-                            {nextDays.map((day, key) => (
-                                <td key={key}>
-                                    <div>{expandDayAbbr(day.day)}</div>
-                                    <span>{day.low}º&nbsp;{day.high}º</span>
-                                </td>
-                            ))}
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table className="weather-card__footer">
+                <tbody>
+                    <tr>
+                        {nextDays.map((day, key) => (
+                            <td key={key}>
+                                <div>{expandDayAbbr(day.day)}</div>
+                                <span className="weather-card__weekdays__temp">{day.low}º&nbsp;&nbsp;{day.high}º</span>
+                            </td>
+                        ))}
+                    </tr>
+                </tbody>
+            </table>
         </section>
     );
 }
