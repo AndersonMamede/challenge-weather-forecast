@@ -5,6 +5,7 @@ import { forecastDataType } from './../../types';
 
 import './index.css';
 import CapitalTable from './../CapitalTable';
+import Author from './../Author';
 
 const Footer = ({ forecasts }) => {
     const { firstChunk, secondChunk } = splitList(forecasts);
@@ -16,6 +17,7 @@ const Footer = ({ forecasts }) => {
                 <CapitalTable forecasts={firstChunk} side="left"/>
                 <CapitalTable forecasts={secondChunk} side="right"/>
             </div>
+            <Author/>
         </footer>
     );
 };

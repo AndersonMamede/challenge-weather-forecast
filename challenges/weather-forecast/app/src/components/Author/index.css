@@ -1,0 +1,14 @@
+.author{
+    padding: 20px 0;
+    text-align: center;
+    color: #FFF;
+}
+
+.author-heart{
+    margin: 0 5px;
+    vertical-align: text-top;
+}
+
+.author-link{
+    color: #213EE0;
+}
