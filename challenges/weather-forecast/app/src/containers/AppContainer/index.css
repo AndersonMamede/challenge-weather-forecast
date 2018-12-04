@@ -6,22 +6,20 @@
 
 .app{
     min-height: 100vh;
-    font: normal 14px Roboto, Arial, Helvetica, sans-serif;
+    font: normal 16px Roboto, Arial, Helvetica, sans-serif;
     background: #a7a7a7;
-    /*
     background: #FF7F00;
     background: -moz-linear-gradient(#FF7F00, #ffba00);
     background: -webkit-linear-gradient(#FF7F00, #ffba00);
     background: linear-gradient(#FF7F00, #ffba00);
-    */
 }
 
 .app__wrapper{
-    max-width: 390px;
+    max-width: 600px;
     padding: 20px 0;
     margin: 0 auto;
 }
 
 .app__main{
-    padding: 20px 30px 30px 30px;
+    padding: 20px 50px;
 }
