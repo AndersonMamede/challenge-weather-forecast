@@ -19,7 +19,7 @@ const Search = ({ onSubmit }) => {
                     type="search"
                     required
                     placeholder="Search a city"
-                    pattern="[^\s]{1,}"
+                    pattern=".*\S.*"
                     title="Must contain at least one non-empty character."
                     defaultValue={searchedTerm}
                     onChange={(event) => (searchedTerm = event.target.value)}/>
