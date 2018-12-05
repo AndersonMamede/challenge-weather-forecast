@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 const Search = ({ onSubmit }) => {
-    let searchedTerm = 'Amsterdam';
+    let searchedTerm = '';
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -21,6 +21,7 @@ const Search = ({ onSubmit }) => {
                     placeholder="Search a city"
                     pattern=".*\S.*"
                     title="Must contain at least one non-empty character."
+                    autoFocus
                     defaultValue={searchedTerm}
                     onChange={(event) => (searchedTerm = event.target.value)}/>
                 <button className="search-bar__submit" type="submit" title="Search">
