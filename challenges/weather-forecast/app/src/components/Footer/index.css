@@ -1,11 +1,16 @@
 .footer{
-    padding: 20px 70px 0 70px;
+    padding: 25px 70px 0 100px;
     border-top: 1px solid #FFF;
 }
 
 .footer__title{
-    margin-bottom: 10px;
-    font-size: 26px;
+    margin-bottom: 5px;
+    font-size: 30px;
     font-weight: 700;
+    text-align: left;
     color: #FFF;
+}
+
+.foooter__capitals{
+    text-align: left;
 }

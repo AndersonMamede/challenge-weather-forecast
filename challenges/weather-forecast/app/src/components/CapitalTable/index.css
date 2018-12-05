@@ -6,6 +6,7 @@
 
 .capitals__table{
     width: 100%;
+    color: #202020;
 }
 
 .capitals__table th,
@@ -13,19 +14,14 @@
     padding: 9px 0;
 }
 
-.capitals__table[data-side="right"] td,
-.capitals__table[data-side="right"] th{
-    text-align: right;
-}
-
 .capitals__table th{
     font-size: 14px;
     font-weight: 300;
     text-align: left;
-    color: #111;
+    color: #222;
 }
 
-.capitals__table-small__header{
+.capitals__table-temp__header{
     width: 35px;
 }
 

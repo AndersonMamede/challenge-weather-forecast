@@ -7,7 +7,7 @@
     width: 100%;
     font: inherit;
     font-size: 20px;
-    border: none;
+    border: 1px solid #D86C00;
 }
 
 .search-bar__input::-webkit-input-placeholder{ font-weight: 300; color: #919191; }
@@ -18,12 +18,12 @@
 
 .search-bar__submit{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
     padding: 0 13px;
     border: none;
-    background: #E0E0E0;
+    background: #FFF;
     cursor: pointer;
     opacity: 0.7;
 }

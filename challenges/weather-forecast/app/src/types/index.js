@@ -17,6 +17,4 @@ const forecastDataType = shape({
     humidity: number.isRequired,
 });
 
-const sideType = oneOf(['left', 'right']);
-
-export { forecastDataType, sideType };
+export { forecastDataType };
