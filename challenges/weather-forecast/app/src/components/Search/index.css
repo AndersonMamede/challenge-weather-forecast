@@ -33,3 +33,14 @@
 .search-bar__submit:focus{
     opacity: 1;
 }
+
+@media (max-width: 550px) {
+    .search-bar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search-bar__input{
+        padding: 10px 47px 10px 20px;
+    }
+}

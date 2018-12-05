@@ -14,3 +14,11 @@
 .foooter__capitals{
     text-align: left;
 }
+
+@media (max-width: 550px) {
+    .footer{
+        padding-top: 15px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}

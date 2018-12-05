@@ -14,8 +14,8 @@ const Footer = ({ forecasts }) => {
         <footer className="footer">
             <h3 className="footer__title">Capitals</h3>
             <div className="foooter__capitals">
-                <CapitalTable forecasts={firstChunk}/>
-                <CapitalTable forecasts={secondChunk}/>
+                <CapitalTable order={1} forecasts={firstChunk}/>
+                <CapitalTable order={2} forecasts={secondChunk}/>
             </div>
             <Author/>
         </footer>

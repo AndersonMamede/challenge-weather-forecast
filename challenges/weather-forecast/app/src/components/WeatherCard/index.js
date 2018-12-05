@@ -29,7 +29,7 @@ const WeatherCard = ({ forecast, onClickClose }) => {
                                 &nbsp;&nbsp;&nbsp;
                                 <img src={iconHigh} width="12" height="12" alt="High"/><b>{today.high}º</b>
                             </td>
-                            <td className="weather-card__now__second-column">
+                            <td>
                                 Wind chill <b>{forecast.windChill}ºC</b>
                             </td>
                         </tr>
@@ -44,9 +44,11 @@ const WeatherCard = ({ forecast, onClickClose }) => {
                 <tbody>
                     <tr>
                         {nextDays.map((day, key) => (
-                            <td key={key}>
+                            <td className="weather-card__weekday" key={key} data-order={key}>
                                 <div>{expandDayAbbr(day.day)}</div>
-                                <span className="weather-card__weekdays__temp">{day.low}º&nbsp;&nbsp;{day.high}º</span>
+                                <span className="weather-card__weekdays__temp">
+                                    {day.low}º&nbsp;&nbsp;{day.high}º
+                                </span>
                             </td>
                         ))}
                     </tr>

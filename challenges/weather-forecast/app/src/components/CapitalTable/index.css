@@ -21,7 +21,7 @@
     color: #222;
 }
 
-.capitals__table-temp__header{
+.capitals-column__temperature{
     width: 35px;
 }
 
@@ -32,4 +32,18 @@
 .capitals__colMin,
 .capitals__colMax{
     width: 30px;
+}
+
+@media (max-width: 550px) {
+    .capitals__column-wrapper{
+        width: 100%;
+    }
+
+    .capitals__column-wrapper[data-order="2"] thead{
+        display: none;
+    }
+
+    .capitals-column__temperature{
+        width: 60px;
+    }
 }

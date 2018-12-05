@@ -4,3 +4,11 @@
     font-weight: 700;
     color: #FFF;
 }
+
+@media (max-width: 550px) {
+    .header__title{
+        padding-left: 40px;
+        font-size: 35px;
+        text-align: left;
+    }
+}
