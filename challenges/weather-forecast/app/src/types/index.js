@@ -1,4 +1,4 @@
-import { string, number, shape, arrayOf, oneOf } from 'prop-types';
+import { string, number, shape, arrayOf } from 'prop-types';
 
 const forecastDataType = shape({
     city: string.isRequired,
