@@ -10,7 +10,7 @@
 
 .capitals__table th,
 .capitals__table td{
-    padding: 4px 0;
+    padding: 9px 0;
 }
 
 .capitals__table[data-side="right"] td,
@@ -19,8 +19,14 @@
 }
 
 .capitals__table th{
-    text-align: left;
+    font-size: 14px;
     font-weight: 300;
+    text-align: left;
+    color: #111;
+}
+
+.capitals__table-small__header{
+    width: 35px;
 }
 
 .capitals__table td{

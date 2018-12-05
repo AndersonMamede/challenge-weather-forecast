@@ -1,7 +1,6 @@
 .author{
-    padding: 20px 0;
+    padding: 35px 0 20px 0;
     text-align: center;
-    color: #FFF;
 }
 
 .author-heart{
@@ -9,6 +8,7 @@
     vertical-align: text-top;
 }
 
-.author-link{
-    color: #213EE0;
+.author-link,
+.author-link:visited{
+    color: inherit;
 }

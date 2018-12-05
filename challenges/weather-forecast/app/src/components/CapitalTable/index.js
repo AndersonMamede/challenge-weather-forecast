@@ -11,8 +11,8 @@ const CapitalTable = ({ side, forecasts }) => (
             <thead>
                 <tr>
                     {side === 'right' && <th></th>}
-                    <th>Min</th>
-                    <th>Max</th>
+                    <th className='capitals__table-small__header'>Min</th>
+                    <th className='capitals__table-small__header'>Max</th>
                     {side === 'left' && <th></th>}
                 </tr>
             </thead>
