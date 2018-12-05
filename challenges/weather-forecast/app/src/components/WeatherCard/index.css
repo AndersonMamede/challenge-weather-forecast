@@ -1,17 +1,20 @@
 .weather-card{
     position: relative;
     margin-bottom: 15px;
-    padding: 15px 10px 12px 10px;
+    padding: 20px 30px 17px 30px;
+    font-size: 17px;
     background: #FFF3E4;
+    color: #515151;
 }
 
 .weather-card__close{
     position: absolute;
     top: 7px;
-    right: 10px;
-    font-size: 20px;
+    right: 15px;
+    font-size: 30px;
     font-family: monospace;
-    color: #E29911;
+    color: #FF860E;
+    cursor: pointer;
 }
 
 .weather-card__body{
@@ -21,26 +24,26 @@
 }
 
 .weather-card__city{
-    font-size: 12px;
     font-weight: 600;
 }
 
 .weather-card__temperature{
     margin: 14px 0 8px 0;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 600;
 }
 
-.weather-card__now b{
-    font-weight: 900;
+.weather-card__now{
+    font-size: 16px;
+    font-weight: 100;
 }
 
-.weather-card__now{
-    font-size: 12px;
+.weather-card__now b{
+    font-weight: 600;
 }
 
 .weather-card__now td{
-    padding: 4px 0;
+    padding: 9px 0;
 }
 
 .weather-card__now img{
@@ -49,15 +52,14 @@
 }
 
 .weather-card__now__first-column{
-    width: 95px;
+    width: 125px;
 }
 
 .weather-card__footer{
     text-align: center;
     padding: 0 5px;
     width: 100%;
-    font-size: 11px;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .weather-card__weekdays__temp{
