@@ -18,7 +18,8 @@ const WeatherCard = ({ forecast, onClickClose }) => {
             <div className="weather-card__body">
                 <div className="weather-card__city">{forecast.city}, {forecast.region} - {forecast.country}</div>
                 <h2 className="weather-card__temperature">
-                    {forecast.currentTemperature}ºC&nbsp;&nbsp;{forecast.currentConditionText}
+                    {forecast.currentTemperature}ºC&nbsp;&nbsp;
+                    <span title={forecast.currentConditionText}>{forecast.currentConditionText}</span>
                 </h2>
                 <table className="weather-card__now">
                     <tbody>
