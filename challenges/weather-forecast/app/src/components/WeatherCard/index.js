@@ -14,7 +14,7 @@ const WeatherCard = ({ forecast, onClickClose }) => {
 
     return (
         <section className="weather-card">
-            <div className="weather-card__close" onClick={onClickClose}>x</div>
+            <div className="weather-card__close" title="Close" onClick={onClickClose}>x</div>
             <div className="weather-card__body">
                 <div className="weather-card__city">{forecast.city}, {forecast.region} - {forecast.country}</div>
                 <h2 className="weather-card__temperature">
