@@ -5,7 +5,7 @@ import AppContainer from './containers/AppContainer';
 
 const CAPITALS = [
     'Brasília', 'Amsterdam', 'London', 'Dublin', 'Berlin',
-    'London', 'Lisbon', 'Paris', 'Brussels', 'Madrid'
+    'Tokyo', 'Lisbon', 'Paris', 'Brussels', 'Madrid'
 ];
 
 ReactDOM.render(

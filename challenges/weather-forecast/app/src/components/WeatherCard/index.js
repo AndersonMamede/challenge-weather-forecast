@@ -9,6 +9,10 @@ const iconLow = require('./icon-low.svg');
 const iconHigh = require('./icon-high.svg');
 
 const WeatherCard = ({ forecast, onClickClose }) => {
+    if (!forecast) {
+        return null;
+    }
+
     const today = forecast.forecastList[0];
     const nextDays = forecast.forecastList.slice(1, 6);
 
@@ -59,7 +63,7 @@ const WeatherCard = ({ forecast, onClickClose }) => {
 }
 
 WeatherCard.propTypes = {
-    forecast: forecastDataType.isRequired,
+    forecast: forecastDataType,
     onClickClose: PropTypes.func.isRequired
 };
 

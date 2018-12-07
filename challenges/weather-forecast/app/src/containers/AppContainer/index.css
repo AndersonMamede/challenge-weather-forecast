@@ -7,11 +7,11 @@
 .app{
     min-height: 100vh;
     font: normal 16px Roboto, Arial, Helvetica, sans-serif;
-    background: #a7a7a7;
     background: #FF7F00;
     background: -moz-linear-gradient(#FF7F00, #ffba00);
     background: -webkit-linear-gradient(#FF7F00, #ffba00);
     background: linear-gradient(#FF7F00, #ffba00);
+    background: #a7a7a7;
 }
 
 .app__wrapper{

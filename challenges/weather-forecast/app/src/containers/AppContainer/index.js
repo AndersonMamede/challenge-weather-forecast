@@ -1,11 +1,12 @@
 import React from 'react';
+import { Route, BrowserRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import weatherForecastApi from './../../services/weatherForecastApi';
 
 import './index.css';
 import ErrorMessage from './../../components/ErrorMessage';
 import Header from './../../components/Header';
-import WeatherCard from './../../components/WeatherCard';
+import WeatherCardContainer from './../../components/WeatherCardContainer';
 import Search from './../../components/Search';
 import Footer from './../../components/Footer';
 
@@ -16,12 +17,9 @@ class AppContainer extends React.Component {
         this.state = {
             capitalsForecasts: null,
             capitalsError: null,
-            weatherCardForecast: null,
-            weatherCardError: null
         };
 
-        this.showWeatherCard = this.showWeatherCard.bind(this);
-        this.closeWeatherCard = this.closeWeatherCard.bind(this);
+        this.loadCapitalsForecasts = this.loadCapitalsForecasts.bind(this);
     }
 
     componentDidMount() {
@@ -40,42 +38,25 @@ class AppContainer extends React.Component {
             .catch(error => done(null, `Error: could not load capitals.\n(${error.toString()})`));
     }
 
-    showWeatherCard(city) {
-        const done = (weatherCardForecast, weatherCardError = null) => {
-            this.setState({ weatherCardForecast, weatherCardError });
-        };
-
-        weatherForecastApi.getForecast(city)
-            .then(forecasts => {
-                forecasts ? done(forecasts[0]) : done(null, 'City not found');
-            })
-            .catch(error => done(null, `Error: could not load weather card data.\n(${error.toString()})`));
-    }
-
-    closeWeatherCard() {
-        this.setState({ weatherCardForecast: null });
-    }
-
     render() {
         return (
-            <div className="app">
-                <div className="app__wrapper">
-                    <Header/>
-                    <main className="app__main">
-                        {this.state.weatherCardError && <ErrorMessage message={this.state.weatherCardError}/>}
-                        {this.state.weatherCardForecast &&
-                            <WeatherCard
-                                forecast={this.state.weatherCardForecast}
-                                onClickClose={this.closeWeatherCard}/>
+            <BrowserRouter>
+                <div className="app">
+                    <div className="app__wrapper">
+                        <Header/>
+                        <main className="app__main">
+                            <Route path="/city/:city" render={({ match }) =>
+                                <WeatherCardContainer city={match.params.city}/>
+                            }/>
+                            <Search onSubmit={(city) => this.loadWeatherCardForecast(city)}/>
+                        </main>
+                        {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
+                        {this.state.capitalsForecasts &&
+                            <Footer forecasts={this.state.capitalsForecasts}/>
                         }
-                        <Search onSubmit={this.showWeatherCard}/>
-                    </main>
-                    {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
-                    {this.state.capitalsForecasts &&
-                        <Footer forecasts={this.state.capitalsForecasts}/>
-                    }
+                    </div>
                 </div>
-            </div>
+            </BrowserRouter>
         );
     }
 }
