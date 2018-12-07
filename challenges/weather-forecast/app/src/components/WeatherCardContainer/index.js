@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import weatherForecastApi from './../../services/weatherForecastApi';
 
+import ErrorMessage from './../../components/ErrorMessage';
 import WeatherCard from './../WeatherCard';
 
 class WeatherCardContainer extends React.Component {
@@ -10,6 +11,7 @@ class WeatherCardContainer extends React.Component {
 
         this.state = {
             forecast: null,
+            error: null,
         };
 
         this.closeWeatherCard = this.closeWeatherCard.bind(this);
@@ -49,11 +51,15 @@ class WeatherCardContainer extends React.Component {
     }
     
     render() {
-        if (!this.state.forecast) {
-            return null;
+        if (this.state.error) {
+            return <ErrorMessage message={this.state.error}/>
         }
 
-        return <WeatherCard forecast={this.state.forecast} onClickClose={this.closeWeatherCard}/>
+        if (this.state.forecast) {
+            return <WeatherCard forecast={this.state.forecast} onClickClose={this.closeWeatherCard}/>
+        }
+        
+        return null;
     }
 }
 
