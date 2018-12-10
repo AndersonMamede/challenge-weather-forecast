@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
+import Favicon from 'react-favicon';
 import PropTypes from 'prop-types';
 import weatherForecastApi from './../../services/weatherForecastApi';
 
@@ -9,6 +10,8 @@ import Header from './../../components/Header';
 import WeatherCardContainer from './../../components/WeatherCardContainer';
 import Search from './../../components/Search';
 import Footer from './../../components/Footer';
+
+const favicon = require('./../../favicon.ico');
 
 class AppContainer extends React.Component {
     constructor(props) {
@@ -42,6 +45,7 @@ class AppContainer extends React.Component {
         return (
             <BrowserRouter>
                 <div className="app">
+                    <Favicon url={favicon}/>
                     <div className="app__wrapper">
                         <Header/>
                         <div className="app__main">
