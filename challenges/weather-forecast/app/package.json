@@ -9,6 +9,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-favicon": "0.0.14",
+    "react-loading-skeleton": "^1.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
