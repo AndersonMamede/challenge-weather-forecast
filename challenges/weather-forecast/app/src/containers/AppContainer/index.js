@@ -49,7 +49,7 @@ class AppContainer extends React.Component {
                     <div className="app__wrapper">
                         <Header/>
                         <div className="app__main">
-                            <Route path="/city/:city" render={({ match }) => {
+                            <Route path="/city/:city" exact render={({ match }) => {
                                 document.title = `${match.params.city} - Weather forecast`;
                                 return <WeatherCardContainer city={match.params.city}/>
                             }}/>
