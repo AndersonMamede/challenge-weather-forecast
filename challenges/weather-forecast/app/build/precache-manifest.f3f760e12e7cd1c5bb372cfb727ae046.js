@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js"
   },
   {
-    "revision": "9b5fc69b616b273d5832",
-    "url": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.9b5fc69b.chunk.js"
+    "revision": "5c7397ac3dd2c50cabf7",
+    "url": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.5c7397ac.chunk.js"
   },
   {
     "revision": "6bcd084a61fb2c3e6c8b",
     "url": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.6bcd084a.chunk.js"
   },
   {
-    "revision": "9b5fc69b616b273d5832",
+    "revision": "5c7397ac3dd2c50cabf7",
     "url": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.4a300403.chunk.css"
   },
   {
-    "revision": "d7d94da1e07452de879a50ed13f0fedc",
+    "revision": "7328444f9d44f9fd384ec0ad92526fc7",
     "url": "/challenges-accepted/challenges/weather-forecast/app/build/index.html"
   }
 ];
