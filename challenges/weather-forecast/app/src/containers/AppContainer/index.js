@@ -45,9 +45,10 @@ class AppContainer extends React.Component {
                     <div className="app__wrapper">
                         <Header/>
                         <div className="app__main">
-                            <Route path="/city/:city" render={({ match }) =>
-                                <WeatherCardContainer city={match.params.city}/>
-                            }/>
+                            <Route path="/city/:city" render={({ match }) => {
+                                document.title = `${match.params.city} - Weather forecast`;
+                                return <WeatherCardContainer city={match.params.city}/>
+                            }}/>
                             <Search/>
                         </div>
                         {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
