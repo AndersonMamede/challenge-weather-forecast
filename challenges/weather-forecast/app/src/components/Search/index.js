@@ -14,6 +14,10 @@ const Search = () => {
         }
     }
 
+    function handleChange(event) {
+        searchedTerm = event.target.value;
+    }
+
     return (
         <Route render={({ history }) => (
             <section className="search-bar">
@@ -27,7 +31,7 @@ const Search = () => {
                         required
                         autoFocus
                         defaultValue={searchedTerm}
-                        onChange={(event) => (searchedTerm = event.target.value)}/>
+                        onChange={handleChange}/>
                     <button className="search-bar__submit" type="submit" title="Search">
                         <img src={require('./icon-search.svg')} width="22" height="22" alt="Search"/>
                     </button>
