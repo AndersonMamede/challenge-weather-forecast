@@ -44,12 +44,12 @@ class AppContainer extends React.Component {
                 <div className="app">
                     <div className="app__wrapper">
                         <Header/>
-                        <main className="app__main">
+                        <div className="app__main">
                             <Route path="/city/:city" render={({ match }) =>
                                 <WeatherCardContainer city={match.params.city}/>
                             }/>
-                            <Search onSubmit={(city) => this.loadWeatherCardForecast(city)}/>
-                        </main>
+                            <Search/>
+                        </div>
                         {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
                         {this.state.capitalsForecasts &&
                             <Footer forecasts={this.state.capitalsForecasts}/>

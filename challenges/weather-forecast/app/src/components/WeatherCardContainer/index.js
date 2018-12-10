@@ -57,11 +57,7 @@ class WeatherCardContainer extends React.Component {
             return <ErrorMessage message={this.state.error}/>
         }
 
-        if (this.state.forecast) {
-            return <WeatherCard forecast={this.state.forecast} onClickClose={this.closeWeatherCard}/>
-        }
-        
-        return null;
+        return <WeatherCard forecast={this.state.forecast} onClickClose={this.closeWeatherCard}/>
     }
 }
 

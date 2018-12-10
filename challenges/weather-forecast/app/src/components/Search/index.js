@@ -1,10 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 import './index.css';
 
-const Search = ({ onSubmit }) => {
+const Search = () => {
     let searchedTerm = '';
 
     function handleSubmit(event, history) {
@@ -22,10 +21,10 @@ const Search = ({ onSubmit }) => {
                     <input
                         className="search-bar__input"
                         type="search"
-                        required
                         placeholder="Search a city"
                         pattern=".*\S.*"
                         title="Must contain at least one non-empty character."
+                        required
                         autoFocus
                         defaultValue={searchedTerm}
                         onChange={(event) => (searchedTerm = event.target.value)}/>
@@ -36,10 +35,6 @@ const Search = ({ onSubmit }) => {
             </section>
         )}/>
     );
-};
-
-Search.propTypes = {
-    onSubmit: PropTypes.func.isRequired,
 };
 
 export default Search;
