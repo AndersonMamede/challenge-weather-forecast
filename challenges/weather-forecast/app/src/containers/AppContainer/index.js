@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
+import queryString from 'query-string';
 import Favicon from 'react-favicon';
 import PropTypes from 'prop-types';
 import weatherForecastApi from './../../services/weatherForecastApi';
@@ -49,9 +50,15 @@ class AppContainer extends React.Component {
                     <div className="app__wrapper">
                         <Header/>
                         <div className="app__main">
-                            <Route path="/city/:city" exact render={({ match }) => {
-                                document.title = `${match.params.city} - Weather forecast`;
-                                return <WeatherCardContainer city={match.params.city}/>
+                            <Route path='/' render={() => {
+                                const { city } = queryString.parse(window.location.search);
+
+                                if (!city) {
+                                    return null;
+                                }
+
+                                document.title = `${city} - Weather forecast`;
+                                return <WeatherCardContainer city={city}/>;
                             }}/>
                             <Search/>
                         </div>

@@ -34,16 +34,6 @@
     width: 30px;
 }
 
-.capitals-city__link,
-.capitals-city__link:visited{
-    text-decoration: none;
-    color: inherit;
-}
-
-.capitals-city__link:hover{
-    text-decoration: underline;
-}
-
 @media (max-width: 550px) {
     .capitals__column-wrapper{
         width: 100%;

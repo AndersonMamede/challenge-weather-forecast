@@ -10,7 +10,9 @@ const Search = () => {
         event.preventDefault();
 
         if (searchedTerm.length) {
-            history.push('/city/' + searchedTerm);
+            history.push({
+                search: `?city=${searchedTerm}`
+            });
         }
     }
 
