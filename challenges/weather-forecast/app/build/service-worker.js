@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.008dccd10919329661e864d5f9616e59.js"
+  "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.0f4d5193202ef3a7747974dc651b4648.js"
 );
 
 workbox.clientsClaim();
