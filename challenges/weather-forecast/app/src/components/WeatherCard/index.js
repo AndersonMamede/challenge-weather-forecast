@@ -19,7 +19,7 @@ const WeatherCard = ({ forecast, onClickClose }) => {
 
     return (
         <section className="weather-card">
-            <SkeletonTheme color="#F1D5B2" highlightColor="">
+            <SkeletonTheme color="#F1D5B2" highlightColor="#FDB46D">
                 <div className="weather-card__close" title="Close" onClick={onClickClose}>x</div>
                 <div className="weather-card__body">
                     <div className="weather-card__city app__skeleton">
