@@ -24,6 +24,7 @@ class AppContainer extends React.Component {
         };
 
         this.loadCapitalsForecasts = this.loadCapitalsForecasts.bind(this);
+        this.handleRenderWeatherCardContainer = this.handleRenderWeatherCardContainer.bind(this);
     }
 
     componentDidMount() {
@@ -42,6 +43,17 @@ class AppContainer extends React.Component {
             .catch(error => done(null, `Error: could not load capitals.\n(${error.toString()})`));
     }
 
+    handleRenderWeatherCardContainer() {
+        const { city } = queryString.parse(window.location.search);
+
+        if (!city) {
+            return null;
+        }
+
+        document.title = `${city} - Weather forecast`;
+        return <WeatherCardContainer city={city}/>;
+    }
+
     render() {
         return (
             <BrowserRouter>
@@ -50,16 +62,7 @@ class AppContainer extends React.Component {
                     <div className="app__wrapper">
                         <Header/>
                         <div className="app__main">
-                            <Route path='/' render={() => {
-                                const { city } = queryString.parse(window.location.search);
-
-                                if (!city) {
-                                    return null;
-                                }
-
-                                document.title = `${city} - Weather forecast`;
-                                return <WeatherCardContainer city={city}/>;
-                            }}/>
+                            <Route path='/' render={this.handleRenderWeatherCardContainer}/>
                             <Search/>
                         </div>
                         {this.state.capitalsError &&  <ErrorMessage message={this.state.capitalsError}/>}
