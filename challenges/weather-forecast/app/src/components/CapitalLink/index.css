@@ -1,9 +1,9 @@
-.city__link,
-.city__link:visited{
+.capital__link,
+.capital__link:visited{
     text-decoration: none;
     color: inherit;
 }
 
-.city__link:hover{
+.capital__link:hover{
     text-decoration: underline;
 }

@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 import './index.css';
 
-const CityLink = ({ city }) => (
-    <Link className="city__link" to={`?city=${city}`}>{city}</Link>
+const CapitalLink = ({ city }) => (
+    <Link className="capital__link" to={`?city=${city}`}>{city}</Link>
 );
 
-CityLink.propTypes = {
+CapitalLink.propTypes = {
     city: PropTypes.string.isRequired
 };
 
-export default CityLink;
+export default CapitalLink;

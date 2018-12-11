@@ -1,13 +1,13 @@
 import React from 'react';
 import { forecastDataType } from './../../types';
 
-import CityLink from './../CityLink';
+import CapitalLink from './../CapitalLink';
 
 const CapitalRow = ({ forecast }) => (
     <tr>
         <td className="capitals-column__temperature">{forecast.forecastList[0].low}º</td>
         <td className="capitals-column__temperature">{forecast.forecastList[0].high}º</td>
-        <td><CityLink city={forecast.city}/></td>
+        <td><CapitalLink city={forecast.city}/></td>
     </tr>
 );
 
