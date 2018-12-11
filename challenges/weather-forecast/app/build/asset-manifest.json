@@ -1,9 +1,9 @@
 {
-  "main.css": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.17bc88a3.chunk.css",
-  "main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.40ab0fd3.chunk.js",
-  "main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.40ab0fd3.chunk.js.map",
-  "static/js/1.0d97218a.chunk.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0d97218a.chunk.js",
-  "static/js/1.0d97218a.chunk.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.0d97218a.chunk.js.map",
+  "main.css": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.334859d7.chunk.css",
+  "main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.f7edac5b.chunk.js",
+  "main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/main.f7edac5b.chunk.js.map",
+  "static/js/1.9f653a64.chunk.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.9f653a64.chunk.js",
+  "static/js/1.9f653a64.chunk.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/1.9f653a64.chunk.js.map",
   "runtime~main.js": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js",
   "runtime~main.js.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/js/runtime~main.45d706fa.js.map",
   "static/media/icon-low.svg": "/challenges-accepted/challenges/weather-forecast/app/build/static/media/icon-low.4c0f8edd.svg",
@@ -11,8 +11,8 @@
   "static/media/icon-heart.svg": "/challenges-accepted/challenges/weather-forecast/app/build/static/media/icon-heart.e22f6384.svg",
   "static/media/favicon.ico": "/challenges-accepted/challenges/weather-forecast/app/build/static/media/favicon.59368f90.ico",
   "static/media/icon-high.svg": "/challenges-accepted/challenges/weather-forecast/app/build/static/media/icon-high.2191c1b5.svg",
-  "static/css/main.17bc88a3.chunk.css.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.17bc88a3.chunk.css.map",
+  "static/css/main.334859d7.chunk.css.map": "/challenges-accepted/challenges/weather-forecast/app/build/static/css/main.334859d7.chunk.css.map",
   "index.html": "/challenges-accepted/challenges/weather-forecast/app/build/index.html",
-  "precache-manifest.f649254c1063f9ecd26a0b50b2318c79.js": "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.f649254c1063f9ecd26a0b50b2318c79.js",
+  "precache-manifest.9cb7f9132cec294481880ec30b983380.js": "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.9cb7f9132cec294481880ec30b983380.js",
   "service-worker.js": "/challenges-accepted/challenges/weather-forecast/app/build/service-worker.js"
 }
