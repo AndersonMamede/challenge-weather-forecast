@@ -14,7 +14,6 @@ class WeatherCardContainer extends React.Component {
             error: null,
         };
 
-        this.closeWeatherCard = this.closeWeatherCard.bind(this);
         this.loadForecast = this.loadForecast.bind(this);
     }
 
@@ -32,10 +31,6 @@ class WeatherCardContainer extends React.Component {
         if (prevProps.city !== this.props.city) {
             this.loadForecast();
         }
-    }
-
-    closeWeatherCard() {
-        this.setState({ forecast: null, error: null });
     }
 
     loadForecast() {
@@ -57,7 +52,7 @@ class WeatherCardContainer extends React.Component {
             return <ErrorMessage message={this.state.error}/>
         }
 
-        return <WeatherCard forecast={this.state.forecast} onClickClose={this.closeWeatherCard}/>
+        return <WeatherCard forecast={this.state.forecast}/>
     }
 }
 

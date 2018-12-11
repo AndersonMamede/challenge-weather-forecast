@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { forecastDataType } from './../../types';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import expandDayAbbr from './../../services/expandDayAbbr';
@@ -9,7 +9,7 @@ import './index.css';
 const iconLow = require('./icon-low.svg');
 const iconHigh = require('./icon-high.svg');
 
-const WeatherCard = ({ forecast, onClickClose }) => {
+const WeatherCard = ({ forecast }) => {
     forecast = forecast || {};
 
     const dataLoaded = Boolean(forecast.city);
@@ -20,7 +20,7 @@ const WeatherCard = ({ forecast, onClickClose }) => {
     return (
         <section className="weather-card">
             <SkeletonTheme color="#F1D5B2" highlightColor="#FDB46D">
-                <div className="weather-card__close" title="Close" onClick={onClickClose}>x</div>
+                <Link to="?" className="weather-card__close" title="Close">x</Link>
                 <div className="weather-card__body">
                     <div className="weather-card__city app__skeleton">
                         {dataLoaded
@@ -96,7 +96,6 @@ const WeatherCard = ({ forecast, onClickClose }) => {
 
 WeatherCard.propTypes = {
     forecast: forecastDataType,
-    onClickClose: PropTypes.func.isRequired
 };
 
 export default WeatherCard;

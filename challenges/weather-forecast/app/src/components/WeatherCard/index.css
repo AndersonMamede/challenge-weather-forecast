@@ -15,6 +15,7 @@
     font-family: monospace;
     color: #FF860E;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .weather-card__body{
