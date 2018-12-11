@@ -51,6 +51,7 @@ class AppContainer extends React.Component {
         }
 
         document.title = `${city} - Weather forecast`;
+        window.scrollTo(0, 0);
         return <WeatherCardContainer city={city}/>;
     }
 
