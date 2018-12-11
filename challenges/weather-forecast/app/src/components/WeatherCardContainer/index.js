@@ -35,7 +35,7 @@ class WeatherCardContainer extends React.Component {
     }
 
     closeWeatherCard() {
-        this.setState({ forecast: null });
+        this.setState({ forecast: null, error: null });
     }
 
     loadForecast() {
