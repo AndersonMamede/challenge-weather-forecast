@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Weather forecast SPA",
   "author": "Anderson Mamede <mamede.anderson@gmail.com>",
-  "homepage": "https://blog.andersonmamede.com.br/challenges-accepted/challenges/weather-forecast/app/build/",
+  "homepage": "https://blog.andersonmamede.com.br/challenge-weather-forecast/app/build/",
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.6.2",
