@@ -11,7 +11,7 @@
 > *Companny: [1STi](http://www.1sti.com.br/)*<br/>
 > *Original challenge description: [link](https://github.com/1STi/desafio-frontend/)*<br/>
 
-## Challenge: Weather forecast SPA
+## Challenge: Weather forecast
 
 ***Stack**: React*<br/>
 
