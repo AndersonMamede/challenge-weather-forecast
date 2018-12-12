@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/challenges-accepted/challenges/weather-forecast/app/build/precache-manifest.9cb7f9132cec294481880ec30b983380.js"
+  "/challenge-weather-forecast/app/build/precache-manifest.91c7d60b7b166045391226ea48cb63fc.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/challenges-accepted/challenges/weather-forecast/app/build/index.html", {
+workbox.routing.registerNavigationRoute("/challenge-weather-forecast/app/build/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
