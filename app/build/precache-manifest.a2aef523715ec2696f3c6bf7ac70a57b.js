@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/challenge-weather-forecast/app/build/static/js/runtime~main.4bee063c.js"
   },
   {
-    "revision": "3464d3a71436fdf763b7",
-    "url": "/challenge-weather-forecast/app/build/static/js/main.3464d3a7.chunk.js"
+    "revision": "61727d7d0917232c9a4a",
+    "url": "/challenge-weather-forecast/app/build/static/js/main.61727d7d.chunk.js"
   },
   {
     "revision": "641e12d1f50516ef1a2d",
     "url": "/challenge-weather-forecast/app/build/static/js/1.641e12d1.chunk.js"
   },
   {
-    "revision": "3464d3a71436fdf763b7",
+    "revision": "61727d7d0917232c9a4a",
     "url": "/challenge-weather-forecast/app/build/static/css/main.93665723.chunk.css"
   },
   {
-    "revision": "c95039b765f9ce703e43659807713c99",
+    "revision": "ede7d972c376562ccd650cd5d2d9fc22",
     "url": "/challenge-weather-forecast/app/build/index.html"
   }
 ];
