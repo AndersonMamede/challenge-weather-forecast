@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { forecastDataType } from './../../types';
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import expandDayAbbr from './../../services/expandDayAbbr';
+import dateToWeekday from './../../services/dateToWeekday';
 
 import './index.css';
 
@@ -24,7 +24,7 @@ const WeatherCard = ({ forecast }) => {
                 <div className="weather-card__body">
                     <div className="weather-card__city app__skeleton">
                         {dataLoaded
-                            ? <span>{forecast.city}, {forecast.region} - {forecast.country}</span>
+                            ? <span>{forecast.city} - {forecast.country}</span>
                             : <Skeleton width={250}/>
                         }
                     </div>
@@ -40,29 +40,29 @@ const WeatherCard = ({ forecast }) => {
                             <tr>
                                 <td className="weather-card__now__first-column">
                                     {dataLoaded ? <img src={iconLow} width="12" height="12" alt="Low"/> : ''}
-                                    {dataLoaded ? <b>{today.low}º</b> : <Skeleton width={45}/>}
+                                    {dataLoaded ? <b>{Math.round(today.low)}º</b> : <Skeleton width={45}/>}
                                     &nbsp;&nbsp;&nbsp;
                                     {dataLoaded ? <img src={iconHigh} width="12" height="12" alt="High"/> : ''}
-                                    {dataLoaded ? <b>{today.high}º</b> : <Skeleton width={45}/>}
+                                    {dataLoaded ? <b>{Math.round(today.high)}º</b> : <Skeleton width={45}/>}
                                 </td>
                                 <td>
                                     {dataLoaded
-                                        ? <span>Wind chill <b>{forecast.windChill}ºC</b></span>
-                                        : <Skeleton width={120}/>
+                                        ? <span>Sensation <b>{Math.round(forecast.currentThermalSensation)}ºC</b></span>
+                                        : <Skeleton width={140}/>
                                     }
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     {dataLoaded
-                                        ? <span>Wind <b>{forecast.windSpeed}km/h</b></span>
+                                        ? <span>Wind <b>{Math.round(forecast.windSpeed)}km/h</b></span>
                                         : <Skeleton width={100}/>
                                     }
                                 </td>
                                 <td>
                                     {dataLoaded
-                                        ? <span>Humidity <b>{forecast.humidity}%</b></span>
-                                        : <Skeleton width={120}/>
+                                        ? <span>Humidity <b>{Math.round(forecast.humidity)}%</b></span>
+                                        : <Skeleton width={140}/>
                                     }
                                 </td>
                             </tr>
@@ -76,9 +76,9 @@ const WeatherCard = ({ forecast }) => {
                                 ? (
                                     nextDays.map((day, key) => (
                                         <td className="weather-card__weekday" key={key} data-order={key}>
-                                            <div>{expandDayAbbr(day.day)}</div>
+                                            <div>{dateToWeekday(day.date)}</div>
                                             <div className="weather-card__weekdays__temp">
-                                                {day.low}º&nbsp;&nbsp;{day.high}º
+                                                {Math.round(day.low)}º&nbsp;&nbsp;{Math.round(day.high)}º
                                             </div>
                                         </td>
                                     ))

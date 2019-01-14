@@ -36,7 +36,9 @@ class AppContainer extends React.Component {
             this.setState({ capitalsForecasts, capitalsError });
         };
 
-        weatherForecastApi.getForecast(this.props.capitals)
+        const capitalIdList = this.props.capitals.map(capital => capital.id);
+
+        weatherForecastApi.getMultipleForecastsById(capitalIdList)
             .then(forecasts => {
                 forecasts ? done(forecasts) : done(null, 'Capitals forecasts not found');
             })
@@ -78,7 +80,10 @@ class AppContainer extends React.Component {
 }
 
 AppContainer.propTypes = {
-    capitals: PropTypes.arrayOf(PropTypes.string).isRequired
+    capitals: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+    })).isRequired
 };
 
 export default AppContainer;

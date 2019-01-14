@@ -40,9 +40,9 @@ class WeatherCardContainer extends React.Component {
             this.setState({ forecast, error });
         };
 
-        weatherForecastApi.getForecast(this.props.city)
-            .then(forecasts => {
-                forecasts ? done(forecasts[0]) : done(null, 'City not found');
+        weatherForecastApi.getForecastByCityName(this.props.city)
+            .then(forecast => {
+                forecast ? done(forecast) : done(null, 'City not found');
             })
             .catch(error => done(null, `Error: could not load weather card data.\n(${error.toString()})`));
     }
