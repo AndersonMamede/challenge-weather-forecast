@@ -1,0 +1,15 @@
+.badge{
+  z-index: 999999999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.badge:hover{
+  text-decoration: underline;
+}

@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import weatherForecastApi from './../../services/weatherForecastApi';
 
 import './index.css';
+import ProjectBadge from './../../components/ProjectBadge';
 import ErrorMessage from './../../components/ErrorMessage';
 import Header from './../../components/Header';
 import WeatherCardContainer from './../../components/WeatherCardContainer';
@@ -61,6 +62,7 @@ class AppContainer extends React.Component {
         return (
             <BrowserRouter>
                 <div className="app">
+                    <ProjectBadge url="https://github.com/AndersonMamede/challenge-weather-forecast/" />
                     <Favicon url={favicon}/>
                     <div className="app__wrapper">
                         <Header/>
