@@ -1,6 +1,4 @@
-***Main project:***
-&nbsp;&nbsp;
-[**`challenges-accepted`**](https://github.com/AndersonMamede/challenges-accepted)
+This project was made to learn/practice new technologies and it was based on a real job challenge with real requirements. **Main project:** [**`challenges-accepted`**](https://github.com/AndersonMamede/challenges-accepted)
 
 ***My response:***
 &nbsp;&nbsp;
