@@ -4,8 +4,7 @@
 &nbsp;&nbsp;
 [**`Run App/Demo`**](https://blog.andersonmamede.com.br/challenge-weather-forecast/app/build/)
 &nbsp;&nbsp;
-[**`Source Code`**](https://github.com/AndersonMamede/challenge-weather-forecast/tree/master/app)
-<br/>
+[**`Source Code`**](https://github.com/AndersonMamede/challenge-weather-forecast/tree/master/app)<br/>
 > *Companny: [1STi](http://www.1sti.com.br/)*<br/>
 > *Original challenge description: [link](https://github.com/1STi/desafio-frontend/)*<br/>
 
