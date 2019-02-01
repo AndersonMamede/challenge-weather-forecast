@@ -1,6 +1,6 @@
-This project was made to learn/practice new technologies and it was based on a real job challenge from a real company. **Main project:** [**`challenges-accepted`**](https://github.com/AndersonMamede/challenges-accepted)
+> This project was developed by me while I learn and practice new technologies and it is based on a real job challenge from a real company. **Main project:** [**`challenges-accepted`**](https://github.com/AndersonMamede/challenges-accepted)
 
-***My response:***
+> ***My response:***
 &nbsp;&nbsp;
 [**`Run App/Demo`**](https://blog.andersonmamede.com.br/challenge-weather-forecast/app/build/)
 &nbsp;&nbsp;
