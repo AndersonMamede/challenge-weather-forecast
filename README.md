@@ -1,11 +1,11 @@
-> This project was developed by me while I learn and practice new technologies and it is based on a real job challenge from a real company. **Main project:** [**`challenges-accepted`**](https://github.com/AndersonMamede/challenges-accepted)
-
+> This project was developed by me while I learn and practice new technologies and it is based on a real job challenge from a real company.<br/>
+> ***Main project:*** [**`challenges-accepted`**](https://github.com/AndersonMamede/challenges-accepted)<br/>
 > ***My response:***
 &nbsp;&nbsp;
 [**`Run App/Demo`**](https://blog.andersonmamede.com.br/challenge-weather-forecast/app/build/)
 &nbsp;&nbsp;
 [**`Source Code`**](https://github.com/AndersonMamede/challenge-weather-forecast/tree/master/app)
-
+<br/>
 > *Companny: [1STi](http://www.1sti.com.br/)*<br/>
 > *Original challenge description: [link](https://github.com/1STi/desafio-frontend/)*<br/>
 
